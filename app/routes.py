@@ -1,5 +1,6 @@
 from flask import request, jsonify, current_app as app
 from .models import User, db
+from urllib.parse import quote as url_quote  # Додайте цей рядок
 
 @app.route('/')
 def index():
